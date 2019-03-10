@@ -1,0 +1,58 @@
+---
+---
+
+@import "{{ site.theme }}";
+.page-header {
+  background-color: #003f72;
+  background-image: url(https://medtech4health.se/wp-content/uploads/2018/01/AIDA-banner-smal.jpg);
+  background-size: 200%;
+  background-position-y: center;
+}
+.project-tagline {
+    opacity: 0.9;
+}
+.page-header a {
+  color: inherit;
+  font-weight: bold;
+}
+
+#example-images {
+  padding-left: 0;
+}
+#example-images > li {
+    border: 1px solid transparent;
+    float: left;
+    height: calc(100% / 3);
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    width: calc(100% / 3);
+}
+#example-images > li > img {
+  cursor: zoom-in;
+}
+
+.info-box th {
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: top;
+}
+
+.info-box ol.references {
+    counter-reset: list;
+    padding-left: 0;
+}
+.info-box ol.references > li {
+    list-style: none;
+}
+.info-box ol.references > li:before {
+    content: "[" counter(list) "] ";
+    counter-increment: list;
+}
+
+.anchorjs-link {
+  color: #157878;
+}
+
+.anchorjs-link:hover {
+  text-decoration: none;
+}
