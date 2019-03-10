@@ -81,7 +81,7 @@ datacite:
     tissue were annotated.
   rightsList:
     - rights: "Restricted access"
-      rightsUri: "https://aida-doi-repository.github.io/10.23698/aida/drov#license"
+      rightsUri: ""
   citation:
     - "@type": "CreativeWork"
       "@id": "https://doi.org/10.5438/0000-00SS"
