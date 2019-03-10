@@ -81,7 +81,7 @@ datacite:
     tissue were annotated.
   rightsList:
     - rights: "Restricted access"
-      rightsUri: ""
+      rightsUri: "#license"
   citation:
     - "@type": "CreativeWork"
       "@id": "https://doi.org/10.5438/0000-00SS"
