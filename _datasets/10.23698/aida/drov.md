@@ -1,13 +1,9 @@
 ---
 title: "10.23698/aida/drov"
-seo:
-  description: "Breast data from the Visual Sweden project DROID"
-  image: "/assets/images/10.23698/aida/drov.png"
 datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": "https://doi.org/10.23698/aida/drov"
-  image: "/assets/images/10.23698/aida/drov.png"
   name: "Ovary data from the Visual Sweden project DROID"
   publicationYear: 2019
   about: "Pathology"
@@ -83,21 +79,6 @@ datacite:
     - rights: "Restricted access"
       rightsUri: "#license"
   citation:
-    - "@type": "CreativeWork"
-      "@id": "https://doi.org/10.5438/0000-00SS"
-      name: "Title of paper 1 goes here"
-    - "@type": "CreativeWork"
-      "@id": "http://dublincore.org/documents/2012/06/14/dces"
-      name: "Title of paper 2 goes here"
-    - "@type": "CreativeWork"
-      "@id": "https://doi.org/10.5438/TNHX-54CG"
-      name: "Title of paper 3 goes here"
-    - "@type": "CreativeWork"
-      "@id": "https://doi.org/10.5438/55E5-T5C0"
-      name: "Title of paper 4 goes here"
-    - "@type": "CreativeWork"
-      "@id": "https://doi.org/10.5438/4K3M-NYVG"
-      name: "Title of paper 5 goes here"
 other:
   status: "Completed"
   annotation: |
@@ -132,13 +113,18 @@ other:
     - "NanoZoomer XR (Hamamatsu, Japan)" # FIXME: is this same as "Hamamatsu NanoZoomer-XR C12000 series 2013"?
     - "NanoZoomer XRL (Hamamatsu, Japan)" # FIXME: is this same as "Hamamatsu NanoZoomer 2.0 HT C9600 series 2013"
   stain: "H&E (hematoxylin and eosin)"
+  phase:
   exampleImage:
-    - url: "/assets/images/10.23698/aida/drbr/unrelated-picture.jpg"
-      title: "A random free-to-reuse breast pathology picture I found somewhere."
-    - url: "/assets/images/10.23698/aida/drbr/unrelated-picture.jpg"
-      title: "A random free-to-reuse breast pathology picture I found somewhere."
-    - url: "/assets/images/10.23698/aida/drbr/unrelated-picture.jpg"
-      title: "A random free-to-reuse breast pathology picture I found somewhere."
+    - title: "A random free-to-reuse breast pathology picture I found somewhere."
+      url: "/assets/images/10.23698/aida/drbr/unrelated-picture.jpg"      
+      thumbnail-url: "/assets/images/10.23698/aida/drbr/unrelated-picture-thumbnail.jpg"      
+    - title: "A random free-to-reuse breast pathology picture I found somewhere."
+      url: "/assets/images/10.23698/aida/drbr/unrelated-picture.jpg"
+      thumbnail-url: "/assets/images/10.23698/aida/drbr/unrelated-picture-thumbnail.jpg"      
+    - title: "A random free-to-reuse breast pathology picture I found somewhere."
+      url: "/assets/images/10.23698/aida/drbr/unrelated-picture.jpg"
+      thumbnail-url: "/assets/images/10.23698/aida/drbr/unrelated-picture-thumbnail.jpg"      
+
 ---
 ## License
 Copyright {{ page.datacite.copyrightYear }} {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}

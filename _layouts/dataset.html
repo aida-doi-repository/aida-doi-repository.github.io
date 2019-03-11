@@ -13,7 +13,7 @@
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:image" content="{{ page.other.exampleImage[0].url | absolute_url }}" />
+    <meta property="og:image" content="{{ d.other.exampleImage[0].thumbnail-url | default: d.other.exampleImage[0].url | absolute_url }}" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="{{ page.datacite.datePublished }}" />
     <script type="application/ld+json">
@@ -32,10 +32,6 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.datacite.name }}</h1>
       <h2 class="project-tagline">{{ page.title }}</h2>
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
       <p><a href="/">AIDA data hub registry</a> providing information on datasets shared on the <a href="https://medtech4health.se/aida/datahub/">AIDA data hub</a>.</p>
     </header>
 
@@ -65,7 +61,7 @@
               {{ page.datacite.author | map: "name" | array_to_sentence_string }}
               ({{ page.datacite.publicationYear }})
               {{ page.datacite.name}}
-              <a href="{{ page.datacite["@id"] }}">{{ page.title }}</a>
+              <a href="{{ page.datacite["@id"] }}">doi:{{ page.title }}</a>
             </td>
           </tr>
           <tr>
@@ -138,6 +134,10 @@
           <tr>
             <th>Stain</th>
             <td>{{ page.other.stain }}</td>
+          </tr>
+          <tr>
+            <th>Phase</th>
+            <td>{{ page.other.phase }}</td>
           </tr>
           <tr>
             <th>References</th>

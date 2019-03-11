@@ -1,6 +1,6 @@
 ---
 ---
-
+// - All pages ----------------------------------------------------------------
 @import "{{ site.theme }}";
 .page-header {
   background-color: #003f72;
@@ -16,6 +16,31 @@
   font-weight: bold;
 }
 
+.anchorjs-link {
+  color: #157878;
+}
+.anchorjs-link:hover {
+  text-decoration: none;
+}
+
+// - Frontpage ----------------------------------------------------------------
+.dataset-table table td,
+.dataset-table table th {
+  border: none;
+  vertical-align: top;
+}
+.dataset-table td:first-child {
+  text-align: center;
+}
+.dataset-table img {
+  max-height: 6em;
+}
+.dataset-table a.doi {
+  font-size: 1rem;
+  color: #606c71;
+}
+
+// - Dataset page -------------------------------------------------------------
 #example-images {
   padding-left: 0;
 }
@@ -36,7 +61,6 @@
   text-align: left;
   vertical-align: top;
 }
-
 .info-box ol.references {
     counter-reset: list;
     padding-left: 0;
@@ -47,12 +71,4 @@
 .info-box ol.references > li:before {
     content: "[" counter(list) "] ";
     counter-increment: list;
-}
-
-.anchorjs-link {
-  color: #157878;
-}
-
-.anchorjs-link:hover {
-  text-decoration: none;
 }

@@ -22,21 +22,19 @@ and pathology has been shared on the AIDA data hub.
 
 *The AIDA data hub is currently being developed in collaboration with pilot
 users from research, clinic and industry. It is planned to go into production
-phase within June 2019.* 
+phase within June 2019.*
 
 ## Datasets shared on the AIDA data hub
 
 <div class="dataset-table">
   <table>
-    <tr>
-      <th>DOI</th>
-      <th>Title</th>
-      <th>Year</th>
-    </tr>
     {% for d in site.datasets %}
       <tr>
-        <td>{{ d.title }}</td>
-        <td><a href="{{ d.url }}">{{ d.datacite.name }}</a></td>
+        <td><a href="{{ d.url }}"><img src="{{ d.other.exampleImage[0].thumbnail-url | default: d.other.exampleImage[0].url }}"></a></td>
+        <td>
+          <a href="{{ d.url }}">{{ d.datacite.name }}</a><br/>
+          <a href="https://doi.org/{{ d.title }}" class="doi">doi:{{ d.title }}</a>
+        </td>
         <td>{{ d.datacite.publicationYear }}</td>
       </tr>
     {% endfor %}

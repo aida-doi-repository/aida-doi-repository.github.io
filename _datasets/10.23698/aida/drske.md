@@ -1,14 +1,9 @@
 ---
 title: "10.23698/aida/drske"
-image: "/assets/images/10.23698/aida/drske/unrelated-picture.jpg"
-seo:
-  description: "Skeletal data from the Visual Sweden project DROID"
-  image: "/assets/images/10.23698/aida/drske/unrelated-picture.jpg"
 datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": "https://doi.org/10.23698/aida/drske"
-  image: "/assets/images/10.23698/aida/drske/unrelated-picture.jpg"
   name: "Skeletal data from the Visual Sweden project DROID"
   publicationYear: 2019
   about: "Radiology"
@@ -75,19 +70,19 @@ datacite:
     - rights: "Restricted access"
       rightsURI: "#license"
   citation:
-    - "@type": "CreativeWork"
+    - "@type": "CreativeWork" # FIXME: Incorrect entry for testing.
       "@id": "https://doi.org/10.5438/0000-00SS"
       name: "Title of paper 1 goes here"
-    - "@type": "CreativeWork"
+    - "@type": "CreativeWork" # FIXME: Incorrect entry for testing.
       "@id": "http://dublincore.org/documents/2012/06/14/dces"
       name: "Title of paper 2 goes here"
-    - "@type": "CreativeWork"
+    - "@type": "CreativeWork" # FIXME: Incorrect entry for testing.
       "@id": "https://doi.org/10.5438/TNHX-54CG"
       name: "Title of paper 3 goes here"
-    - "@type": "CreativeWork"
+    - "@type": "CreativeWork" # FIXME: Incorrect entry for testing.
       "@id": "https://doi.org/10.5438/55E5-T5C0"
       name: "Title of paper 4 goes here"
-    - "@type": "CreativeWork"
+    - "@type": "CreativeWork" # FIXME: Incorrect entry for testing.
       "@id": "https://doi.org/10.5438/4K3M-NYVG"
       name: "Title of paper 5 goes here"
 other:
